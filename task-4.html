@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-4</title>
+</head>
+
+<body>
+    <script>
+
+        const numberarr1 = [
+            [25, 30, 43, 45],
+            [15, 26, 50, 78],
+            [30, 44, 60, 15],
+            [15, 45, 20, 54]
+        ];
+
+
+        let max = numberarr1[0][0];
+        let min = numberarr1[0][0];
+
+
+        for (let i = 0; i < numberarr1.length; i++) {
+            for (let j = 0; j < numberarr1[i].length; j++) {
+                const currentElement = numberarr1[i][j];
+                if (currentElement > max) {
+                    max = currentElement;
+                }
+                if (currentElement < min) {
+                    min = currentElement;
+                }
+            }
+        }
+
+        console.log("Maximum value:", max);
+        console.log("Minimum value:", min);
+
+    </script>
+</body>
+
+</html>
